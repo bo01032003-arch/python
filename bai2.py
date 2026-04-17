@@ -9,7 +9,7 @@ while n > 0:
         so_chan += 1
     else:
         so_le += 1
-        n //= 10
+    n //= 10
 
 print("so luong so chan: ", so_chan)
 print("so luong so le: ", so_le)
