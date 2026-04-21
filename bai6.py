@@ -1,31 +1,16 @@
-s = input("Nhập chuỗi S: ")
-word = input("Nhập từ cần đếm: ")
+s = input("Nhap chuoi S: ")
+work = input("Nhap tu can dem: ")
 
-# chuẩn hoá về chữ thường để đếm cho chính xác
+#Chuan hoa ve chu thuong de dem
 s = s.lower()
-word = word.lower()
+work = work.lower()
 
-# tách thành từng từ
-words = s.split()
+#tach tu
+works = s.split()
 
 count = 0
-for w in words:
-    if w.strip(".,") == word:
+for w in s:
+    if w.strip(".,") == work:
         count += 1
 
-print(f"Số từ '{word}' là {count}")
-s = input("Nhập chuỗi: ")
-
-# 1. Xoá khoảng trắng đầu cuối
-s = s.strip()
-
-# 2. Xoá khoảng trắng dư thừa giữa các từ
-while "  " in s:
-    s = s.replace("  ", " ")
-
-# 3. Xoá khoảng trắng trước dấu , .
-s = s.replace(" ,", ",")
-s = s.replace(" .", ".")
-
-print("Chuỗi hoàn chỉnh:")
-print(s)
+print(f"So tu '{work}' la {count}")
