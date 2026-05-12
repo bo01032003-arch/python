@@ -9,7 +9,7 @@ print("Tháng hiện tại (chữ):", now.strftime("%B"))
 print("Tuần thứ trong năm:", now.isocalendar()[1])
 print("Tuần thứ trong tháng:", (now.day - 1) // 7 + 1)
 print("Ngày thứ trong năm:", now.timetuple().tm_yday)
-print("Ngày hiện tại:", now.day)
+print("Ngày hiện tại:", now.day)`
 print("Thứ của ngày:", now.strftime("%A"))
 print("Giờ phút giây:", now.strftime("%H:%M:%S"))
 
